@@ -1,0 +1,17 @@
+.header {  
+    &-blocks {
+      display: flex;
+      justify-content: space-around;
+      align-content: right;
+      padding: 2rem 0;
+      background: #1D406C;
+    }
+    &-menu{
+      .menu-items{
+        color:white;
+        padding: 15px;
+        text-decoration: none;
+        text-transform: uppercase;        
+      }
+    }
+}

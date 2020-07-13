@@ -1,0 +1,17 @@
+.movies{
+  display: flex;
+  justify-content: space-around;
+
+  .product{
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .product img{
+    width: 237px;
+    height: 350px;
+  }
+  .title{
+    font-size:2rem;
+  }
+}
