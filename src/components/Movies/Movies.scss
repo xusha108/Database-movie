@@ -1,10 +1,14 @@
 .movies{
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
 
   .product{
     padding: 1rem;
-    text-align: center;
+    text-align: left;
+  }
+  .description{
+    width: 350px;
   }
 
   .product img{
@@ -13,5 +17,9 @@
   }
   .title{
     font-size:2rem;
+  }
+  .tagline{
+    font-weight: 700;
+    font-size:1.5rem;
   }
 }

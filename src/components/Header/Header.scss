@@ -4,14 +4,19 @@
       justify-content: space-around;
       align-content: right;
       padding: 2rem 0;
-      background: #1D406C;
+      background: #0d253f;
     }
     &-menu{
       .menu-items{
-        color:white;
-        padding: 15px;
+        color:#01b4e4;
+        padding: 30px;
         text-decoration: none;
-        text-transform: uppercase;        
+        text-transform: uppercase; 
+
+        &:hover{
+          color: #90cea1;
+          cursor: pointer;         
+        }      
       }
     }
 }
