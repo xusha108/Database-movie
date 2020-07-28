@@ -1,20 +1,31 @@
 
 let initialState = {movies: []};
 
-export default (state = initialState, action) => {
-  
-  if (action.type === 'GET_POPULAR_MOVIES_SUCSESS') {
-    return {
-      ...state,
-      movies: [action.payload,action.payload,action.payload,action.payload]
-    }
-  }
-
-  if (action.type === 'SUCCESS') {
-    return {
-      payload: action.payload
-    }
-  }
-  
-  return state;
+const ActionTypes = {
+  GET_POPULAR_MOVIES_SUCCESS: 'GET_POPULAR_MOVIES_SUCCESS',
+  GET_MOVIE_BY_ID_SUCCESS: 'GET_MOVIE_BY_ID_SUCCESS',
 }
+
+export default (state = initialState, action) => {
+  const {
+    GET_POPULAR_MOVIES_SUCCESS,
+    GET_MOVIE_BY_ID_SUCCESS    
+    } = ActionTypes
+
+switch (action.type) {
+    case GET_POPULAR_MOVIES_SUCCESS:
+        return {
+            ...state,
+            movies: action.payload
+        };
+    case GET_MOVIE_BY_ID_SUCCESS:
+        return {
+          ...state,
+          movies: action.payload
+        };
+  
+    default:
+        return state
+  }
+}
+

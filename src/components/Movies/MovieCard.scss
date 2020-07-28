@@ -1,0 +1,44 @@
+.movie-card{  
+  background-image: 
+    linear-gradient(
+      rgba(29, 27, 27, 0.45),  
+      rgba(2, 2, 2, 0.45)),
+    url(https://image.tmdb.org/t/p/original/rAiYTfKGqDCRIIqo664sY9XZIvQ.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+
+    & img{
+      width: 400px;
+      height: 600px;
+      padding: 2.5rem;
+    }
+
+    &-info{
+      width: 50%;
+      color: white;
+      padding: 2.5rem;
+
+      & h1{
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        font-size: 4rem;
+      }
+      &-tagline{
+        font-style: italic;
+        font-size: 1.8rem;
+      }
+
+      &-overview{
+        font-size: 1.5rem;
+        letter-spacing: 1px;   
+      }
+      & p{
+        text-transform: uppercase;
+        font-size: 1.3rem;
+      }
+
+    }
+
+
+}

@@ -1,0 +1,55 @@
+  
+.main-title{
+  font-size: 2rem;
+  padding: 1rem 2rem;
+}
+
+.movies{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 1rem 2rem;
+
+.product{
+    padding: 1rem;
+    text-align: left;
+    text-align: center;
+}
+.release_date{
+    width: 350px;
+}
+
+.product img{
+    width: 237px;
+    height: 350px;
+  }
+  .title{
+    font-size:2rem;
+  }
+  .tagline{
+    font-weight: 700;
+    font-size:1.5rem;
+  }
+  .btn{
+    border-color: #fff;
+    background-color: #fff;
+    color: #0d253f;
+    font-size: 1rem;
+    font-weight: bold;
+    display: inline-block;
+    word-wrap: break-word;
+    white-space: normal;
+    text-transform: uppercase;
+    padding: 0.4rem 1.3rem;
+    border-radius: 10px;
+
+    &:focus{
+      outline: none;      
+    }
+
+    &:hover{
+      background-color: #dfeaee;
+      cursor: pointer;
+    }
+  }
+}
