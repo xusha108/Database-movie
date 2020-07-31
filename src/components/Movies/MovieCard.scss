@@ -1,17 +1,11 @@
-.movie-card{  
-  background-image: 
-    linear-gradient(
-      rgba(29, 27, 27, 0.45),  
-      rgba(2, 2, 2, 0.45)),
-    url(https://image.tmdb.org/t/p/original/rAiYTfKGqDCRIIqo664sY9XZIvQ.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+.movie-card{    
     display: flex;
-
-    & img{
+    //filter: brightness(40%);
+   
+    &-poster img{
       width: 400px;
       height: 600px;
-      padding: 2.5rem;
+      padding: 2.5rem;     
     }
 
     &-info{
