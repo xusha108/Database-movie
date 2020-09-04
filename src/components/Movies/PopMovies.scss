@@ -25,10 +25,18 @@
   }
   .title{
     font-size:2rem;
+    text-align: center;
+    width: 350px;
   }
   .tagline{
     font-weight: 700;
     font-size:1.5rem;
+  }
+
+  .release_date{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color:#252525;
   }
   .btn{
     border-color: #fff;

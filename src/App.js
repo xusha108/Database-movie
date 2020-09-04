@@ -6,6 +6,7 @@ import store from './redux/store';
 import Header from './components/Header/Header';
 import PopMovies from './components/Movies/PopMovies';
 import MovieCard from './components/Movies/MovieCard';
+import Favourite from './components/Movies/Favourite';
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
         <Header/>      
         <Route exact path="/" component={PopMovies} />    
         <Route path="/card/:id" component={MovieCard} />    
+        <Route path="/favourite" component={Favourite} />    
       </Router>
     </Provider>   
   );

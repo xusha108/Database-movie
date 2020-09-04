@@ -1,31 +1,12 @@
+import { combineReducers } from 'redux';
+import popular from './popular';
+import movieById from './movieById';
+import favourite from './favourite';
 
-let initialState = {movies: []};
+const rootReducer = combineReducers({
+  popular,
+  movieById,
+  favourite,
+});
 
-const ActionTypes = {
-  GET_POPULAR_MOVIES_SUCCESS: 'GET_POPULAR_MOVIES_SUCCESS',
-  GET_MOVIE_BY_ID_SUCCESS: 'GET_MOVIE_BY_ID_SUCCESS',
-}
-
-export default (state = initialState, action) => {
-  const {
-    GET_POPULAR_MOVIES_SUCCESS,
-    GET_MOVIE_BY_ID_SUCCESS    
-    } = ActionTypes
-
-switch (action.type) {
-    case GET_POPULAR_MOVIES_SUCCESS:
-        return {
-            ...state,
-            movies: action.payload
-        };
-    case GET_MOVIE_BY_ID_SUCCESS:
-        return {
-          ...state,
-          movies: action.payload
-        };
-  
-    default:
-        return state
-  }
-}
-
+export default rootReducer;

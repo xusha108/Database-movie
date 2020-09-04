@@ -1,38 +1,52 @@
 .movie-card{    
-    display: flex;
-    //filter: brightness(40%);
-   
-    &-poster img{
-      width: 400px;
-      height: 600px;
-      padding: 2.5rem;     
+  display: flex;
+  justify-content: space-around; 
+  
+  &-poster img{
+    width: 400px;
+    height: 600px;
+    padding: 2.5rem;     
+  }
+
+  &-info{
+    width: 50%;
+    color: white;
+    padding: 2.5rem;
+
+    & h1{
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      font-size: 4rem;
+    }
+    &-tagline{
+      font-style: italic;
+      font-size: 1.8rem;
     }
 
-    &-info{
-      width: 50%;
-      color: white;
-      padding: 2.5rem;
-
-      & h1{
-        letter-spacing: 3px;
-        text-transform: uppercase;
-        font-size: 4rem;
-      }
-      &-tagline{
-        font-style: italic;
-        font-size: 1.8rem;
-      }
-
-      &-overview{
-        font-size: 1.5rem;
-        letter-spacing: 1px;   
-      }
-      & p{
-        text-transform: uppercase;
-        font-size: 1.3rem;
-      }
-
+    &-overview{
+      font-size: 1.5rem;
+      letter-spacing: 1px;   
     }
-
-
+    & p{
+      text-transform: uppercase;
+      font-size: 1.3rem;
+    }
+    &-fav{
+      font-size: 2rem;
+      &:hover{
+        opacity: 0.4;
+        cursor: pointer;
+      }      
+    }
+    &-favorite {
+      font-size: 2rem;
+      text-decoration: none;
+      color:white;
+      padding: 0.9rem;
+      &:hover{
+        opacity: 0.4;
+        cursor: pointer;
+      }
+    }
+  }
 }
