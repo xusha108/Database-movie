@@ -6,7 +6,8 @@ h2{
 .favourite{
   display: flex;
   justify-content: space-around;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
+  
 
   &-item{
     padding: 2rem;   
@@ -51,6 +52,9 @@ h2{
         cursor: pointer;
         opacity: 0.7;      
       }
+    }
+    .removeItem{
+      display: none;
     }
   }
 }

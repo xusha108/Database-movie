@@ -11,9 +11,13 @@ import {getMoviesAction} from '../../redux/actions/getMoviesAction';
 
 class Favourite extends Component {
 
+  state = {
+    removeItem: false
+  }
+
   removeFavouriteId  = (id) => { 
-    this.props.remove(id)    
-    console.log('id', id)
+    this.setState({removeItem: true})
+    this.props.remove(id)
   };
 
   componentDidMount() {
@@ -31,8 +35,10 @@ class Favourite extends Component {
 
     const favMovies =  movies.length && movies.map( (item, index) => {
         if (storageFavourite.includes(item.id)) {         
-          return <div className='favourite-item' // className={(storageFavourite === item.id) ? 'favourite-item' : 'remove'}
-           key={`fav-${index}`}
+          return <div 
+            className={(this.state.removeItem) ? 'removeItem' : ''}
+            className={'favourite-item'}
+            key={`fav-${index}`}
            >           
               <img src={`https://image.tmdb.org/t/p/original${item.poster_path}`} width={'100px'} alt='' />                          
               <div className='title'>{item.original_title}</div>              

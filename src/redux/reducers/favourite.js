@@ -42,7 +42,6 @@ export default (state = initialState, action) => {
           }
         }     
         newState.ids.splice( index, 1);
-        newState.ids.filter( el => el.id !== index) // посмотреть функционад
         localStorage.setItem ('favouriteId', newState.ids.toString());
         console.log('newState',newState.ids)      
              
